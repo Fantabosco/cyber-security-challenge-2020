@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="ERROR" monitorInterval="1800">
+	<Properties>
+		<Property name="rootLevel">INFO</Property>
+	</Properties>
+	<DynamicThresholdFilter key="loggingForced" defaultThreshold="ALL" onMatch="ACCEPT" onMismatch="NEUTRAL">
+        <KeyValuePair key="true" value="ALL"/>
+    </DynamicThresholdFilter>
+	<Appenders>
+        <Console name="HumanConsoleAppender" target="SYSTEM_OUT">
+            <HumanReadableLayout />
+        </Console>
+	</Appenders>
+	<Loggers>
+		<Root level="${rootLevel}">
+            <AppenderRef ref="HumanConsoleAppender"/>
+		</Root>
+	</Loggers>
+</Configuration>
