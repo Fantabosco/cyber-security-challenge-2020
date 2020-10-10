@@ -7,9 +7,7 @@
         <KeyValuePair key="true" value="ALL"/>
     </DynamicThresholdFilter>
 	<Appenders>
-        <Console name="HumanConsoleAppender" target="SYSTEM_OUT">
-            <HumanReadableLayout />
-        </Console>
+        <Console name="HumanConsoleAppender" target="SYSTEM_OUT" />
 	</Appenders>
 	<Loggers>
 		<Root level="${rootLevel}">
